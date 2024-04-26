@@ -1,0 +1,11 @@
+#Cam Robinson due:3/8/24
+import sys
+import re
+
+text = sys.argv[1]
+pattern = "^[a-zA-Z0-9]+$"
+
+if re.match(pattern,text):
+    print("The string contains all alphanumeric characters")
+else:
+    print("The string contains some non-alphanumeric characters") 
